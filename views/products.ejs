@@ -1,0 +1,28 @@
+<div class="<%= category %>banner" id="banner">
+  <h1 id="bannerText" class="text-uppercase"><%= category %></h1>
+</div>
+
+<section id="products">
+  <div class="container">
+    <div class="row">
+      <% productsArr.forEach(function(items) { %>
+      <div class="col-3">
+        <div class="card">
+          <img src="<%= items.image %>" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title line-clamp2"><%= items.title %></h5>
+            <div class="row" style="margin-top: 2rem">
+              <div class="col">
+                <p class="card-text">Price : <%= items.price %> $</p>
+              </div>
+              <div class="d-grid gap-2">
+                <a href="/products/<%= items.id %>" class="btn btn-primary" role="button">More Info</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</section>

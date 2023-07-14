@@ -1,0 +1,280 @@
+/*--- ROOT ---*/
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #eeeeee;
+}
+
+div {
+  display: block;
+}
+
+/*--- LINE CLAMP ---*/
+.line-clamp2 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom: 1rem;
+}
+
+.line-clamp4 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  margin-bottom: 1rem;
+}
+
+/*--- CAROUSEL SLIDER ---*/
+
+#carouselExample img {
+  max-height: 650px;
+}
+
+/*--- CATEGORIES ---*/
+
+#main {
+  height: 55rem;
+}
+
+.womens-clothing {
+  background-image: url("../public/images/WomenCloth.jpg");
+  background-position: 50% 15%;
+}
+
+.half-height {
+  min-height: 23.125em;
+}
+
+.category-tile {
+  border: 1px solid #fff;
+  position: relative;
+}
+
+.womens-jewelry {
+  background-image: url("../public/images/Jewelery.jpg");
+  background-size: auto 110%;
+  background-position: 40% 60%;
+}
+
+.electronics {
+  background-image: url("../public/images/Electronics.jpeg");
+  background-size: 90%;
+  background-position-x: 60%;
+  min-height: 28.65em;
+}
+
+.mens-cloth {
+  background-image: url("../public/images/MenCloth.jpg");
+  background-size: auto 100%;
+  background-position: 50% 34%;
+}
+
+.full-height {
+  min-height: 51.725em;
+}
+
+.category-tile h1,
+.category-tile h2 {
+  font-size: 1.75rem;
+  position: absolute;
+  bottom: 1.875rem;
+  left: 1.875rem;
+  color: #fff;
+  text-shadow: 2px 2px #575757;
+}
+
+/*--- BEST SELLER ---*/
+
+#best-seller {
+  height: 35rem;
+}
+
+#best-seller img {
+  padding: 1rem;
+  height: 15rem;
+  width: auto;
+  object-fit: contain;
+}
+
+#best-seller > h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#best-seller .card {
+  height: 30rem;
+  border-radius: 0;
+}
+
+.carousel-control-next,
+.carousel-control-previous {
+  width: 10% !important;
+}
+
+/*--- FOOTER ---*/
+footer {
+  background-color: #eeeeee;
+  color: black;
+  width: auto;
+  padding: 1rem 2rem 0 2rem;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*--- BANNER ---*/
+
+.jewelerybanner {
+  background-image: url("../public/images/JewelryBanner.jpg");
+  min-height: 28.65em;
+  background-size: cover;
+  background-position-y: 55%;
+  margin-bottom: 5rem;
+}
+
+.menbanner {
+  background-image: url("../public/images/MenBanner.webp");
+  min-height: 28.65em;
+  margin-bottom: 5rem;
+}
+
+.womenbanner {
+  background-image: url("../public/images/WomenBanner.webp");
+  min-height: 28.65em;
+  background-size: cover;
+  margin-bottom: 5rem;
+}
+
+.electronicsbanner {
+  background-image: url("../public/images/ElectronicsBanner.jpg");
+  min-height: 28.65em;
+  background-position-y: 65%;
+  margin-bottom: 5rem;
+}
+
+#banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#bannerText {
+  position: absolute;
+  left: 15rem;
+  top: 50%;
+  transform: translateY(-50%);
+  text-shadow: 2px 2px #d6d6d6;
+}
+
+.bottom-img {
+  background-image: url("../public/images/BottomBanner.jpg");
+  min-height: 28.65em;
+  background-position-y: 70%;
+  background-size: cover;
+}
+
+.bottom-img p {
+  color: white;
+  font-size: 5rem;
+  text-align: left;
+  padding: 8rem;
+  text-shadow: 2px 2px #575757;
+}
+
+/*--- PRODUCTS ---*/
+
+#products img {
+  padding: 1rem;
+  height: 15rem;
+  width: auto;
+  object-fit: contain;
+}
+
+#products .card {
+  height: 26rem;
+  margin-bottom: 3rem;
+}
+
+#products .card-text {
+  font-size: large;
+}
+
+#products .card-title {
+  min-height: 3rem;
+}
+
+/*--- PRODUCT DETAILS ---*/
+
+#details {
+  min-height: 30rem;
+}
+
+#details img {
+  display: block;
+  margin-left: auto;
+  margin-right: 40%;
+  width: 80%;
+  padding: 2rem;
+}
+
+#details p {
+  font-size: large;
+}
+
+#details h2,
+#details span:last-of-type {
+  padding-bottom: 1rem;
+}
+
+#details p:first-of-type {
+  border-top: solid 1px grey;
+  padding-top: 1rem;
+}
+
+.checked {
+  color: orange;
+}
+
+/*--- ERROR PAGE ---*/
+
+#error {
+  min-height: 28.65em;
+}
+
+#error h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 15%;
+  max-width: 30rem;
+}
+
+#error p:first-of-type {
+  text-align: center;
+  font-size: 2rem;
+  max-width: 30rem;
+}
+
+#error p {
+  text-align: center;
+  max-width: 30rem;
+}
+
+#error img {
+  float: right;
+  margin-top: 30%;
+}
+
+#error a {
+  margin-left: 18%;
+}

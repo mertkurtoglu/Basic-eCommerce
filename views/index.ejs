@@ -1,0 +1,110 @@
+<main>
+  <img src="/public/images/MainBanner.jpg" class="d-block w-100" alt="..." />
+
+  <!-- MAIN SECTION -->
+  <section id="main">
+    <div class="container">
+      <div class="row gx-1">
+        <div class="col-sm-8">
+          <div class="row gx-1">
+            <div class="col-sm-6">
+              <a href="/products/category/women">
+                <div class="womens-clothing half-height category-tile">
+                  <h2 class="hp-category-message">Women's Clothing</h2>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="/products/category/jewelery">
+                <div class="womens-jewelry half-height category-tile">
+                  <h2 class="hp-category-message">Women's Jewelry</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <a href="/products/category/electronics">
+                <div class="electronics half-height category-tile">
+                  <h2 class="hp-promotion-message">Electronics</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <a href="/products/category/men">
+            <div class="mens-cloth full-height category-tile">
+              <h2 class="hp-category-message">Men's Clothing</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST SELLER SECTION -->
+  <section id="best-seller">
+    <h2>Best Seller</h2>
+    <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="row">
+              <% bestSellers.forEach(function(items) { %>
+              <div class="col-3">
+                <div class="card">
+                  <img src="<%= items.image %>" class="card-img-top" alt="..." />
+                  <a href="/products/<%= items.id %>" style="text-decoration: none; color: black">
+                    <div class="card-body">
+                      <h5 class="card-title line-clamp2"><%= items.title %></h5>
+                      <p class="card-text line-clamp4"><%= items.description %></p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <% }) %>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container">
+            <div class="row">
+              <% bestSellers2.forEach(function(items) { %>
+              <div class="col-3">
+                <div class="card">
+                  <img src="<%= items.image %>" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title line-clamp2"><%= items.title %></h5>
+                    <p class="card-text line-clamp4"><%= items.description %></p>
+                  </div>
+                </div>
+              </div>
+              <% }) %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <div class="bottom-img"><p>Shop Now</p></div>
+</main>
