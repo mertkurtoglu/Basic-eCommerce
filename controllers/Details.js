@@ -4,9 +4,10 @@ const app = express();
 
 module.exports.getProduct = async function (req, res) {
   let id = req.params.id;
-  const mainUrl = process.env.mainUdrl;
+  const mainUrl = process.env.mainUrl;
   const productUri = mainUrl + "products/" + id;
 
+  console.log("response.data:", productUri);
   // Get Single Product
   var productsJson;
   try {
